@@ -1,0 +1,24 @@
+#!/bin/bash
+
+#####Color Codes#####
+RED='\033[01;31m'
+GREEN='\033[01;32m'
+YELLOW='\033[01;33m'
+PURPLE='\033[01;35m'
+CYAN='\033[01;36m'
+NONE='\033[00;00m'
+#####################
+
+clear
+echo -e ${CYAN}
+figlet "WordPress Installer"
+echo -e ${RED}
+figlet 'Coded by Decrypt3r' -f digital
+echo
+echo
+echo  -e "\033[33;5mInstallation Starting in 3 Seconds...\033[0m"
+sleep 3
+
+
+yum install php73
+yum install mariadb*
